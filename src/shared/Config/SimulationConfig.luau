@@ -1,0 +1,61 @@
+--!strict
+
+local SimulationTypes = require(script.Parent.Parent.Types.SimulationTypes)
+
+local config: SimulationTypes.Config = {
+	Time = {
+		InitialTime = 9,
+		DayDuration = 1200,
+		Speed = 1,
+		Paused = false,
+		NightTemperatureDrop = 5,
+		NightAmbientFactor = 0.3,
+	},
+	Lightning = {
+		Enabled = true,
+		FirstStrikeDelay = 3,
+		MinInterval = 10,
+		MaxInterval = 22,
+		SevereFirstStrikeDelay = 0.5,
+		SevereMinInterval = 1.5,
+		SevereMaxInterval = 3,
+		LeadTime = 0.5,
+		Radius = 180,
+		Height = 120,
+		Segments = 12,
+		Jitter = 12,
+		Width = 0.35,
+		FlashDuration = 0.22,
+		FlashBrightness = 0.5,
+		ThunderSoundId = "rbxassetid://132341585381383",
+		SoundSpeed = 1125,
+		MaxSoundDistance = 4000,
+		SoundLifetime = 20,
+		Volume = 0.6,
+	},
+	Snow = {
+		Enabled = true,
+		CellSize = 0.5,
+		MaxDepth = 0.6,
+		MaxCellsPerSurface = 4096,
+		MaxTotalCells = 8192,
+		SimulationInterval = 0.1,
+		ReplicationInterval = 0.25,
+		DepthQuantum = 0.002,
+		AccumulationRate = 0.04,
+		SunnyMeltRate = 0.004,
+		TemperatureMeltRate = 0.00015,
+		FootprintDepth = 0.14,
+		FootprintLength = 1.6,
+		FootprintWidth = 0.9,
+		FootprintRefillMultiplier = 0.6,
+		FootprintSoftenRate = 0.001,
+		StepDistance = 1.6,
+		StepInterval = 0.12,
+		StepOffset = 0.5,
+		MaxStepSpeed = 40,
+		DrawDistance = 180,
+	},
+}
+
+return config

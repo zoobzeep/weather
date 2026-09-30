@@ -1,0 +1,23 @@
+{
+	"name": "weather",
+	"servePort": 34872,
+	"tree": {
+		"$className": "DataModel",
+		"$ignoreUnknownInstances": true,
+		"ReplicatedStorage": {
+			"$ignoreUnknownInstances": true,
+			"Weather": { "$path": "src/shared" }
+		},
+		"ServerScriptService": {
+			"$ignoreUnknownInstances": true,
+			"WeatherServer": { "$path": "src/server" }
+		},
+		"StarterPlayer": {
+			"$ignoreUnknownInstances": true,
+			"StarterPlayerScripts": {
+				"$ignoreUnknownInstances": true,
+				"WeatherClient": { "$path": "src/client" }
+			}
+		}
+	}
+}
