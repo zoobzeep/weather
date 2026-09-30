@@ -1,6 +1,8 @@
 # Weather
 
 Weather system made for Roblox created using typed LuaU and Rojo
+Weather should change after a random hold, usually ~20-45 seconds with a followed transition into the next event
+'SevereThunderstorm' hold is 75-110 seconds before transitioning
 
 # Force weather
 
@@ -8,6 +10,7 @@ Weather system made for Roblox created using typed LuaU and Rojo
 local WeatherService = require(game.ServerScriptService.WeatherServer.Services.WeatherService)
 WeatherService.ForceWeather("Rain", 90)
 ```
+Will have to be ran on the server
 Change the first argument to whatever event you want that's included in `src/shared/Config/WeatherConfig.luau`
 
 # Configs
